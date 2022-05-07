@@ -1,0 +1,151 @@
+/* Global */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #532c2c;
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  padding: 1em;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+h2 {
+  color: bisque;
+  margin-left: 0.8em;
+}
+
+p {
+  color: cyan;
+  margin-left: 0.8em;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  margin: 10px 30px;
+  padding-left: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Navbar */
+nav {
+  width: 100vw;
+  height: 3em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f1fce0;
+}
+
+@media only screen and (max-width: 600px) {
+  li {
+    margin: 5px 6px;
+  }
+  a {
+    font-size: 0.8em;
+  }
+  nav {
+    width: 100vw;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Intro */
+.splash {
+  height: 30em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.2em;
+    padding: 0.5em;
+  }
+  .splash {
+    height: 18em;
+  }
+}
+
+/* Sumery section */
+.sumery {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Section potos */
+.photos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.photos img {
+  width: 30%;
+  margin: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .photos img {
+    width: 80%;
+  }
+}
+
+/* Tesimonial section */
+.testimonial h1 {
+  text-align: left;
+  margin: 1em;
+}
+
+.testimonial {
+  background-color: whitesmoke;
+}
+
+.testimonial p {
+  margin: 1em;
+  padding-bottom: 5em;
+}
+
+/* Meetup section */
+.meetup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meetup img {
+  width: 50%;
+}
+
+.meetup h1 {
+  background-color: #532c2c;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxXQUFBO0FBRUE7RUFDSSxTQUFTO0VBQ1QsVUFBVTtFQUNWLHNCQUFzQjtFQUN0Qix5QkFBaUM7RUFDakMsbUNBQW1DO0FDQXZDOztBREdBO0VBQ0ksY0FBYztFQUNkLFlBQVk7RUFDWiw0QkFBNEI7RUFDNUIsa0JBQWtCO0FDQXRCOztBREdBO0VBQ0ksYUFBYTtFQUNiLGtCQUFrQjtBQ0F0Qjs7QURHQTtFQUNJLFdBQVc7RUFDWCxrQkFBa0I7QUNBdEI7O0FER0E7RUFDSSxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLHlCQUF5QjtBQ0E3Qjs7QURHQTtFQUNJLGlCQUFpQjtFQUNqQixpQkFBaUI7QUNBckI7O0FER0E7RUFDSSxxQkFBcUI7RUFDckIsWUFBWTtBQ0FoQjs7QURHQSxXQUFBO0FBRUE7RUFDSSxZQUFZO0VBQ1osV0FBVztFQUNYLGFBQWE7RUFDYix5QkFBeUI7RUFDekIsbUJBQW1CO0VBQ25CLHlCQUFvQztBQ0R4Qzs7QURJQTtFQUNJO0lBQ0ksZUFBZTtFQ0RyQjtFRElFO0lBQ0ksZ0JBQWdCO0VDRnRCO0VES0U7SUFDSSxZQUFZO0lBQ1osYUFBYTtJQUNiLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0VDSHpCO0FBQ0Y7O0FETUEsVUFBQTtBQUVBO0VBQ0ksWUFBWTtFQUNaLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0FDSnZCOztBRE9BO0VBQ0ksWUFBWTtBQ0poQjs7QURPQTtFQUNJO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7RUNKcEI7RURPRTtJQUNJLFlBQVk7RUNMbEI7QUFDRjs7QURRQSxtQkFBQTtBQUVBO0VBQ0ksYUFBYTtFQUNiLDJCQUEyQjtFQUMzQixtQkFBbUI7QUNOdkI7O0FEVUEsa0JBQUE7QUFFQTtFQUNJLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IsbUJBQW1CO0FDUnZCOztBRFdBO0VBQ0ksVUFBVTtFQUNWLFdBQVc7QUNSZjs7QURXQTtFQUNJO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixtQkFBbUI7RUNSekI7RURXRTtJQUNJLFVBQVU7RUNUaEI7QUFDRjs7QURZQSx1QkFBQTtBQUVBO0VBQ0ksZ0JBQWdCO0VBQ2hCLFdBQVc7QUNWZjs7QURhQTtFQUNJLDRCQUE0QjtBQ1ZoQzs7QURhQTtFQUNJLFdBQVc7RUFDWCxtQkFBbUI7QUNWdkI7O0FEYUEsbUJBQUE7QUFFQTtFQUNJLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQ1h2Qjs7QURjQTtFQUNJLFVBQVU7QUNYZDs7QURjQTtFQUNJLHlCQUFpQztBQ1hyQyIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
